@@ -1,0 +1,18 @@
+{
+  "name": "account-service-local",
+  "version": "1.0.0",
+  "scripts": {
+    "gen:events": "asyncapi generate fromTemplate asyncapi/account.aas.yaml github:dalsgaard/asyncapi-template -o asyncapi/generated --force-write --no-interactive",
+    "send:account-created": "tsx src/send-account-created.ts"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.4"
+  },
+  "devDependencies": {
+    "@asyncapi/cli": "^6.0.0",
+    "@types/amqplib": "^0.10.5",
+    "@types/node": "^25.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "~5.9.3"
+  }
+}
