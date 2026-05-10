@@ -1,6 +1,7 @@
 {
   "name": "account-service-local",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "gen:events": "asyncapi generate fromTemplate asyncapi/account.aas.yaml github:dalsgaard/asyncapi-template -o asyncapi/generated --force-write --no-interactive",
     "send:account-created": "tsx src/send-account-created.ts"
