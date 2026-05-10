@@ -14,4 +14,4 @@ await client.sendAccountCreated({
 });
 
 console.log('account.created sent');
-process.exit(0);
+await client.close();
