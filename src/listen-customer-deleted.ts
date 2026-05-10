@@ -1,4 +1,4 @@
-import { createCustomerDeletedAmqpListener } from '../asyncapi/generated/account-service-amqp-handlers';
+import { createCustomerDeletedAmqpListener } from '../asyncapi/generated/account-service-amqp-listeners';
 
 const listener = await createCustomerDeletedAmqpListener(
   { url: process.env.AMQP_URL ?? 'amqp://localhost', queue: 'account-service-local' },
