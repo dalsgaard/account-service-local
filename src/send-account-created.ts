@@ -3,7 +3,6 @@ import { createAccountServiceAmqpClient } from '../asyncapi/generated/account-se
 
 const client = await createAccountServiceAmqpClient({
   url: process.env.AMQP_URL ?? 'amqp://localhost',
-  exchange: 'account-events',
 });
 
 await client.sendAccountCreated({
