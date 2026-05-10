@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "gen:events": "asyncapi generate fromTemplate asyncapi/account.aas.yaml github:dalsgaard/asyncapi-template -o asyncapi/generated --force-write --no-interactive",
+    "setup": "tsx src/setup.ts",
     "send:account-created": "tsx src/send-account-created.ts"
   },
   "dependencies": {
